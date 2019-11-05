@@ -1,7 +1,7 @@
 class Haxe313 < Formula
   desc "Multi-platform programming language"
   homepage "http://haxe.org"
-  head "https://github.com/HaxeFoundation/haxe.git", :revision => "c3a67dacfbd703d5413ce42ddbde7735614787fc"
+  devel "https://github.com/HaxeFoundation/haxe.git", :revision => "c3a67dacfbd703d5413ce42ddbde7735614787fc"
 
   conflicts_with "haxe", :because => "Differing versions of the same formula."
 
