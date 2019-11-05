@@ -23,11 +23,11 @@ class Haxe313 < Formula
     bin.install_symlink lib/"haxe/haxe"
   end
 
-  def caveats; <<-EOS.undent
-    Add the following line to your .bashrc or equivalent:
-      export HAXE_STD_PATH="#{HOMEBREW_PREFIX}/lib/haxe/std"
+  def caveats
+    <<~EOS
+      Add the following line to your .bashrc or equivalent:
+          export HAXE_STD_PATH="#{HOMEBREW_PREFIX}/lib/haxe/std"
     EOS
-  end
 
   test do
     ENV["HAXE_STD_PATH"] = "#{HOMEBREW_PREFIX}/lib/haxe/std"
